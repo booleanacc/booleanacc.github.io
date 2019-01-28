@@ -12,8 +12,10 @@ display:inline-block;
     display:inline-block;
     height:200px;
     width:300px;
-  
-   
+    border-radius:10px;   
+}
+p{
+    padding:10px   
 }
 div{
  padding:20px;   
