@@ -5,11 +5,11 @@ body{
 }
 .right{
    width:50%;
-
+display:inline-block;
 }
 .img{
     
- 
+    display:inline-block;
     height:200px;
     width:250px;
   
