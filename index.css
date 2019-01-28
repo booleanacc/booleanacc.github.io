@@ -5,13 +5,14 @@ body{
 }
 .right{
    width:50%;
-   display:inline-block;
+  float:left;
 }
 .img{
     
-  display:inline-block;
+ 
     height:200px;
-    width:100px;
+    width:150px;
+    float:left;
    
 }
 .title{
