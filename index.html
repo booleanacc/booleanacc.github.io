@@ -16,11 +16,9 @@
     
     <script> 
     $(document).ready(function(){
-     $("div#content").on('click','animateBtn',function(){
-        $("#mainTitle").animate({"font-size": '50px'});
-        $("#mainTitle").animate({"font-size": '20px'});
-         $("#mainTitle").animate({"color": 'blue'});
-      });
+     var size = parseInt($("body").css("font-size")); 
+     $("#mainTitle").css({'font-size':50});
+     $("#mainTitle").css({'font-size':size});
     });
     </script> 
     
