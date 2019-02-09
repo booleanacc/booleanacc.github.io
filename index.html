@@ -17,9 +17,8 @@
     <script> 
     $(document).ready(function(){
      var size = parseInt($("body").css("font-size")); 
-     $("#mainTitle").css({'font-size':50});
-     $("#mainTitle").css({'font-size':size});
-    });
+      $(this).animate({fontSize: "40px"}, 1000);
+     $(this).animate({fontSize: "50px"}, 1000);
     </script> 
     
   </head>
