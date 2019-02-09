@@ -16,7 +16,7 @@
     
     <script> 
     $(document).ready(function(){
-      $("#animateBtn").click(function(){
+     $("div#content").on('click','animateBtn',function(){
         $("#mainTitle").animate({"font-size": '50px'});
         $("#mainTitle").animate({"font-size": '20px'});
          $("#mainTitle").animate({"color": 'blue'});
