@@ -13,14 +13,19 @@
     <link rel="stylesheet" href="index.css">
     
     <title>Anshul Paul</title>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script> 
-    $(document).ready(function(){
-     var size = parseInt($("body").css("font-size")); 
-      $("#mainTitle").animate({fontSize: "40px"}, 1000);
-     $("#mainTitle").animate({fontSize: "50px"}, 1000);
-    )};
-    </script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+	 $("#mainTitle").css({'color': 'black'});
+     $("#mainTitle").animate({fontSize: '+=20px'},1000);
+     $("#mainTitle").animate({fontSize: '-=20px'},1000);
+     $("#mainTitle").css({'color': 'blue'});
+     $("img").css({'border': '1px solid black'});
+     
+  });
+});
+</script> 
     
   </head>
   
