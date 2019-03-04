@@ -132,7 +132,7 @@
 	}
 	h2 {
 		font-size:150%;	
-		text-align:left;
+		text-align:center;
 	}
 	h3 {
 		font-size:120%;	
@@ -141,6 +141,7 @@
 	a{
 		position:static;
 		margin-top:10px;
+		
 	}
 	.col-right {
 		padding:10px;	
@@ -167,6 +168,7 @@
 	.flex-container{
 		float:none;
 		display:grid;
+		width:100px;
 	}
 	.text{
 	word-wrap: break-word;
