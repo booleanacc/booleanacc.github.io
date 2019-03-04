@@ -62,12 +62,12 @@
 	
 	div.content{
 		margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
-		width:900px;
+		width:100%;
 	}
 				
 	div.col-right{
 		float:right;
-		width:660px
+		width:100%;
 		}
 		
 	div.sidebar-left{
