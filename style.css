@@ -139,9 +139,11 @@
 		text-align:left;
 		padding:10px;
 	}
-	li{
+	a{
 		position:static;
 		margin-top:10px;
+		width:30px;
+		height:20px
 		
 	}
 	.col-right {
