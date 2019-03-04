@@ -1,69 +1,52 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="description" content="Simple HTML and CSS Page">
-    <meta name="keywords" content="HTML,CSS">
-    <meta name="author" content="Anshul Paul">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-	   
-  $("#animateBtn").click(function(){
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Wild Life</title>
+</head>
 
-	 $("#mainTitle").css({'color': 'black'});
-     $("#mainTitle").animate({fontSize: '+=20px'},1000);
-     $("#mainTitle").animate({fontSize: '-=20px'},1000);
-     $("#mainTitle").css({'color': 'blue'});
-     $("img").css({'border': '5px solid black'});
-      
-  });
-});
-</script> 
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+<body>
+    <div id="header">
+        <h1>Welcome to Wildlife for Life</h1>
+        <h2>We fight for life</h2>
+        
+        <ul class="navigation">
+            <li><a href="index.html" title="home">Home</a></li>
+            <li><a href="#" title="contact">Contact Us</a></li>
+        </ul>
+    </div>
     
-    <title>Anshul Paul</title>
-   
+    <div class="content">
     
-  </head>
-  
-  
-  <body>
-   <h1 class="title" id="mainTitle">Simple HTML and CSS Page</h1>
-<div>
-  <img class="card-img-top img" src="I9A1863_10.jpg" alt="Card image cap">
-  <p class="card-text right">My name is Anshul Paul and I am a student at Woodbridge High School. I have taken a few computer science classes and am interested in pursuing it as a major. </p>  
-</div>
-  <br>
-<br>
-<p>I am attending this class because I want to learn more about web design and improve my websites. </p>
-<br>
-<h4 class="title">Technologies for this Class</h4>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavsScript</li>
-</ul>
-<h4 class="title">Resources</h4>
-<ul>
-<li><a href="https://www.w3schools.com" target="_blank" >W3schools</a> - This website provides information about html elements </li>
-<li><a href="https://stackoverflow.com/" target="_blank" >StackOverflow</a> - This website is a forum that can be consulted to find solutions to common problems</li>
-</ul>
-
- <!--Animate Button -->
-    <button type="button" class="btn btn-primary" id="animateBtn">Animate</button>
+    <div class="col-right">
+        
+        <h1>The Wild Life is great</h1><br />
+        <p>Wild Life includes all non-domesticated plants, animals and other organisms.</p>
+        <p>Wildlife can be found in all ecosystems. Deserts, forests, rain forests, plains, grasslands, and other areas including the most developed urban sites, all have distinct forms of wildlife.</p><br />
+        
+        <h3>Destruction</h3><br />
+        <img src="images/img1.jpg" class="float-left" alt="alternative text.  This text is for screen readers or in the instance an image can't load, a description of what should have been here." /><p>Exploitation of wild populations has been a characteristic of modern man since our exodus from Africa 130,000 – 70,000 years ago. The rate of extinctions of entire species of plants and animals across the planet has been so high in the last few hundred years it is widely believed that we are in the sixth great extinction event on this planet</p><br />
+        
+        <h3 class="clear">Food, pets, and traditional medicines</h3><br />
+        <p>Anthropologists believe that the Stone Age people and hunter-gatherers relied on wildlife, both plants and animals, for their food. In fact, some species may have been hunted to extinction by early human hunters.</p>
+    </div>
     
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <div class="sidebar-left">
+    	<h3>Favorite links</h3>
+    	<ul class="list">
+        	<li><a href="http://wildlife-museum.org/" title="Lindsay Wildlife Museum">Lindsay Wildlife Museum</a></li>
+            <li><a href="http://www.worldwildlife.org/home-full.html" title="WWF">WWF</a></li>
+        </ul>
+        
+        <h3>News</h3>
+        <p>Aug/2012 - About forty Blue whales have been sighted swimming in waters 15 miles west of La Jolla.</p>
+        <p>Aug/2012 - Three tigers have been found dead in India in the last week. The carcass of a ten year old tigress was found in Kanha Tiger Reserve, and another female tiger was found in a very poor state of health in the same reserve. Unfortunately vets could not save her.</p>
+    </div>
+    <br class="clear" />  <!-- this code is clearing the floats from the above divs.  See what happens when you take it away to really learn what clear does... -->
+    </div>
+    <div id="footer">
+        <p>We believe that we can all live together in Planet Earth</p>
+    </div>
+</body>
 </html>
