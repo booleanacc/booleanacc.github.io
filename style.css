@@ -168,4 +168,8 @@
 		float:none;
 		display:grid;
 	}
+	.text{
+	word-wrap: break-word;
+	width:90%;
+	}
 }
