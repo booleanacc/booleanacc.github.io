@@ -137,8 +137,9 @@
 	h3 {
 		font-size:120%;	
 		text-align:left;
+		padding:10px;
 	}
-	a{
+	li{
 		position:static;
 		margin-top:10px;
 		
@@ -147,6 +148,7 @@
 		padding:10px;	
 		border-bottom:1px solid black;
 		width:100%;
+		
 	}
 	.content {
 		width:100%;
