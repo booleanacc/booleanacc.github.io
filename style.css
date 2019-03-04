@@ -121,8 +121,10 @@
 
 	@media only screen and (max-width: 600px) {
 	body{
-		width:100%;		  
+		width:100%;		
+		background-color:white;
 	}
+		
 	h1{
 		font-size:150%;	
 		text-align:center;
@@ -130,6 +132,10 @@
 	}
 	h2 {
 		font-size:150%;	
+		text-align:left;
+	}
+	h3 {
+		font-size:120%;	
 		text-align:left;
 	}
 	a{
@@ -140,6 +146,13 @@
 		padding:10px;	
 		border-bottom:1px solid black;
 		width:100%;
+	}
+	.content {
+		width:100%;
+	}
+		
+	p{
+	width:100%;
 	}
 	#footer{
 		width:100%;
