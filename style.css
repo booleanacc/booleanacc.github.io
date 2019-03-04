@@ -30,7 +30,7 @@
 		margin:0 auto; /* by declaring a width on any block element (like a div), giving it a css property of margin:0 auto will center that block element on page */
 		min-height:130px;	/* setting a minimum height of an element means that it can grow to be bigger, if there is a lot of content in it. However, if it doesn't have enough content, it will be at the very least (in this example) 130 pixels tall */
 		padding:45px 15px 15px;	/* by setting a padding, the content within a HTML element will not touch the edges of that element (by adding padding to an element, it actually makes that element appear wider and/or taller.  In this case, the header div is now 15px wider and taller on each side. */
-		width:870px;	/* sets the width of the div to 900px. Remember that if you add padding to this element it will increase the size by the number of pixels in the padding. In this example the width is 900px and we have 15px to the left and right so the total width of the header will be (870px + 15px+15px=930px */
+		width:100%;	/* sets the width of the div to 900px. Remember that if you add padding to this element it will increase the size by the number of pixels in the padding. In this example the width is 900px and we have 15px to the left and right so the total width of the header will be (870px + 15px+15px=930px */
 		
 				}
 		
@@ -102,7 +102,7 @@
 		margin:0 auto;
 		padding:15px;
 		text-align:center;
-		width:900px;
+		width:100%;
 	}
 	.float-left{
 		float:left;	/* use this on an element (like an image) to make it float to the left of it's containing HTML element */
@@ -130,10 +130,15 @@
 		font-size:150%;	
 	}
 	a{
-		position:static;	
+		position:static;
+		margin:10px
 	}
 	.col-right {
-		padding:5px;	
+		padding:10px;	
+		border-bottom:1px solid black;
+	}
+	#footer{
+	width:100%;
 	}
 	img{
 		width:150px;
