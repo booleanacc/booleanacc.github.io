@@ -117,13 +117,33 @@
 	.clear{
 		clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 	}	
-	.flex-container {
-		  display: flex;
-		  flex-wrap: wrap;
-	}
+	
 
 	@media only screen and (max-width: 600px) {
-	  div {
-	    background-color: black;
-	  }
+	body{
+		width:100%;		  
 	}
+	h1{
+		font-size:150%;	
+	}
+	h2 {
+		font-size:150%;	
+	}
+	a{
+		position:static;	
+	}
+	.col-right {
+		padding:5px;	
+	}
+	img{
+		width:150px;
+		height:150px;
+	}
+	#header{
+		width:100%;
+	}
+	.flex-container{
+		float:none;
+		display:grid;
+	}
+}
