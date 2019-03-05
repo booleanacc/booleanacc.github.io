@@ -178,4 +178,11 @@
 	word-wrap: break-word;
 	width:90%;
 	}
+	div#footer{
+	width:100%;	
+	}
+		
+	div#header{
+	width:100%;	
+	}
 }
