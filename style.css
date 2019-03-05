@@ -183,4 +183,8 @@
 	div#header{
 	width:100%;	
 	}
+		
+	.news{
+		float:none;
+	}
 }
