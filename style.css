@@ -153,6 +153,8 @@
 		
 	}
 	.content {
+		float:none;
+		display:grid;
 		width:100%;
 	}
 		
