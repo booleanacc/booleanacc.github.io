@@ -146,13 +146,13 @@ body, h1, h2, h3, p, img, ul, li{
 		height:200px
 		
 	}
-	.col-right {
+	div.col-right {
 		padding:10px;	
 		border-bottom:1px solid black;
 		width:100%;
 		
 	}
-	.content {
+	div.content {
 		width:100%;
 	}
 		
