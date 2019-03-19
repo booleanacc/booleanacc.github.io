@@ -7,21 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>  
     <title>Desktop Version</title>
+    
+    <script>
+    if (WURFL.is_mobile === true) {
+    window.location.href = "https://booleanacc.github.io/mobile.html";
+    }
+    </script>
   </head>
   <body>
+    
+    
   <h1 id="heading">WURFL database Capabilities</h1>
+    
   <div class="list">
-   <dl>
-    <dt>device_os</dt>
-    <dd>- This capability is used to identify the operation system of the device</dd>
-     <dt>is_mobile</dt>
-    <dd>- This capability is used to identify whether the device is a mobile or not</dd>
-     <dt>is_touchscreen</dt>
-    <dd>- This capability is used to identify if the device is touchscreen or not</dd>
-  </dl>
-</div>
+       <dl>
+        <dt>device_os</dt>
+        <dd>- This capability is used to identify the operation system of the device</dd>
+         <dt>is_mobile</dt>
+        <dd>- This capability is used to identify whether the device is a mobile or not</dd>
+         <dt>is_touchscreen</dt>
+        <dd>- This capability is used to identify if the device is touchscreen or not</dd>
+      </dl>
+   </div>
 
 
     <!-- Optional JavaScript -->
