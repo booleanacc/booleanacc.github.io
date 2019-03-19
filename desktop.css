@@ -2,7 +2,7 @@ div{
 
 margin-left:25px;
 padding:20px;
-size:130%;
+font-size:130%;
 
 }
 
@@ -15,7 +15,7 @@ padding:20px;
 
 p{
 
-size:150%;
+font-size:150%;
 margin-left:10px;
 margin-top:20px;
 }
