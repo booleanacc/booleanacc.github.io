@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>ABC Toys | Location</title>
+
+    <script type="text/javascript">
+    var x = document.getElementById("demo");
+	function getLocation() {
+  		if (navigator.geolocation) {
+   		 navigator.geolocation.getCurrentPosition(showPosition);
+  		} else {
+    	x.innerHTML = "Geolocation is not supported by this browser.";
+  	}
+	}
+
+	function showPosition(position) {
+	  x.innerHTML = "Latitude: " + position.coords.latitude + 
+	  "<br>Longitude: " + position.coords.longitude; 
+	}	
+
+    </script>
+
   </head>
   <body>
 
@@ -31,7 +49,7 @@
 
 <div style="width:80%;margin-left:auto;margin-right:auto;top:30px;position:relative">
 
-  <label>When we open our store, we will let you know our location here even with directions from your place to it!!!</label> <br>
+  <label id="demo"></label> <br>
   
 
     </div>
