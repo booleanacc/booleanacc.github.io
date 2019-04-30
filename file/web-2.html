@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html> 
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script type="text/javascript" async="true"> function changeFunc() {
+       if(document.getElementById("select").value == 0)
+            $('body').css('background-image','none');
+        if(document.getElementById("select").value == 1)
+           $('body').css('background-image','url(lightblue.jpg)');
+        if(document.getElementById("select").value == 2)
+            $('body').css('background-image','url(lightgold.jpg)');
+    }
+  </script>
+  <script>
+  // Register the service worker
+  if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
+  // Registration was successful
+  console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  }).catch(function(err) {
+  // registration failed :(
+  console.log('ServiceWorker registration failed: ', err);
+      });
+  }
+</script>
+  <style type="text/css"></style>
+</head>
+<body>
+
+  <h1 style="text-align:center;padding:10px">Homework 14</h1>
+
+  <div style="padding:10px">
+    <p>Lorem ipsum dolor sit amet, no vim quod cetero utroque. Eos ea quas justo, est ut erant menandri. Est id vide ubique alienum, te possim honestatis his. Vix epicurei constituam at, duo an causae adipiscing omittantur. Te novum nostrud qui. Mel ad primis feugiat tacimates, fugit appareat et pro, bonorum molestiae vituperatoribus no eum.</p>
+
+  <p>In delenit referrentur sit, maiorum ponderum vim ad, ne pro homero epicurei. Elit facilisi est ei, vero persius delenit eu pri, ex eos graece tempor. Eu usu brute interpretaris, mei hinc quando legendos cu. Quem quaeque eu eum, eu fierent expetendis vix. Ei modo denique per, no est iuvaret equidem concludaturque, no falli utamur ius. Dictas causae ornatus has ex.</p>
+    
+
+  <select id="select" onchange="changeFunc()">Choose Background
+    <option value="0">None</option>
+    <option value="1">Light Blue</option>
+    <option value="2">Light Gold</option>
+  </select></body></html>
