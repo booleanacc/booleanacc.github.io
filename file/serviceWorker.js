@@ -5,7 +5,7 @@ var cacheVersion = 1;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
-const URL = 'pwa.html';
+const URL = 'web-2.html';
 
 this.addEventListener('install', event => {
   event.waitUntil(
