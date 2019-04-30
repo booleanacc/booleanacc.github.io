@@ -1,19 +1,16 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaVVJMP9H-mvq_A43IaF27B0q-tNrnfmI&callback=initMap">
+</script>
 
-    <title>ABC Toys | Location</title>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaVVJMP9H-mvq_A43IaF27B0q-tNrnfmI&callback=initMap">
-	</script>
-
-<script type="text/javascript" async="true">
-    var map, infoWindow;
+<script type="text/javascript" async="true">// Note: This example requires that you consent to location sharing when
+// prompted by your browser. If you see the error "The Geolocation service
+// failed.", it means you probably did not give permission for the browser to
+// locate you.
+var map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.397, lng: 150.644},
@@ -49,8 +46,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                         'Error: Your browser doesn\'t support geolocation.');
   infoWindow.open(map);
 }
-    </script>
-<style type="text/css">/* Always set the map height explicitly to define the size of the div
+</script><style type="text/css">/* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 #map {
   height: 100%;
@@ -61,36 +57,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-</style>
-  </head>
-  <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;width:100%;z-index:1">
-  <a class="navbar-brand" href="index.html">ABC Toys</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="contact.html">Contact Us</a>
-      <a class="nav-item nav-link" href="products.html">Products</a>
-      <a class="nav-item nav-link" href="location.html">Location</a>
-     
-    </div>
-  </div>
-</nav><br><br>
-
-
-
-<div style="width:80%;margin-left:auto;margin-right:auto;top:30px;position:relative">
-
-  <div id="map"></div>
-
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+</style></head><body>
+<div id="map"></div>
+<!-- Replace the value of the key parameter with your own API key. -->
+</body></html>
